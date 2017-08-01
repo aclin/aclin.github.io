@@ -1,11 +1,18 @@
 <html>
-<head>
+<head lang="en">
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<title>Allan Lin's Website</title>
+
+<meta name="description" content="Homepage of Allan Lin">
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <link rel="stylesheet" type="text/css" href="css/icons.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 <style>
 </style>
@@ -14,7 +21,7 @@
 
 <body>
 
-<div class="container">
+<div id="home" class="container">
     <div class="navbar">
         <section class="desktop">
             <h1>Allan Lin</h1>
@@ -25,10 +32,9 @@
             </div>
             <div class="links">
                 <ul>
-                    <li>LinkedIn</li>
-                    <li>GitHub</li>
-                    <li>Project 1</li>
-                    <li>Project 2</li>
+                    <li class="nav-link"><a href="#skills">Skills</a></li>
+                    <li class="nav-link"><a href="#experience">Experience</a></li>
+                    <li class="nav-link"><a href="#other">Links</a></li>
                 </ul>
             </div>
         </section>
@@ -42,30 +48,14 @@
                 </button>
             </div>
             <div id="nav-menu">
+                <div class="profile-pic-box">
+                    <img class="profile-pic" src="images/Allan_mobile.jpg" alt="Allan_profile_picture_mobile">
+                </div>
                 <ul>
-                    <li class="nav-link">
-                        <img class="profile-pic" src="images/Allan_mobile.jpg" alt="Allan_profile_picture_mobile">
-                    </li>
-                    <li class="nav-link"></li>
-                    <li class="nav-link">GitHub</li>
-                    <li class="nav-link">Project 1</li>
-                    <li class="nav-link">Project 2</li>
+                    <li class="nav-link"><a href="#skills">Skills</a></li>
+                    <li class="nav-link"><a href="#experience">Experience</a></li>
+                    <li class="nav-link"><a href="#other">Links</a></li>
                 </ul>
-                <!-- <div class="nav-link profile-pic">
-                    <img src="images/Allan_mobile.jpg" alt="Allan_profile_picture_mobile">
-                </div>
-                <div class="nav-link">
-                    LinkedIn
-                </div>
-                <div class="nav-link">
-                    GitHub
-                </div>
-                <div class="nav-link">
-                    Project 1
-                </div>
-                <div class="nav-link">
-                    Project 2
-                </div> -->
             </div>
         </section>
     </div>
@@ -74,7 +64,7 @@
         <section>
             <h1>Hello. I hope you're having a great day.</h1>
         </section>
-        <section>
+        <section id="skills">
             <h3>What I Do</h3>
             <p>
                 I am a software engineer with a focus on web front-end. I am also comfortable finding my way down the stack.
@@ -117,40 +107,77 @@
                     </ul>
                 </div>
             </div>
+            <div class="back-top"><a href="#home">Back to top</a></div>
         </section>
-        <section>
+        <section id="experience">
             <h3>What I Have Done Professionally</h3>
             <article>
-                <h4><a href="https://www.glimpzit.com" target="_blank">GlimpzIt</a></h4>
+                <h4>
+                    <a href="https://www.glimpzit.com" target="_blank">GlimpzIt</a> - Software Engineer
+                </h4>
+                <!-- <p>Software Engineer</p> -->
                 <p><img src="images/glimpzit.png" alt="glimpzit-website-thumbnail"></p>
                 <p>
-                    Front-end software engineer across all web presence of GlimpzIt. The company website. The customer portal. The panel engagement portal.
+                    Software engineer and lead front-end developer for all web presence of GlimpzIt.
+                    This includes the company website, the customer portal, and the panel engagement portal.
+                </p>
+                <p>
+                    I also build and maintain the <a href="https://www.disruptivedecisionssummit.com" target="_blank">Disruptive Decisions Summit</a>
+                    homepage, which is a conference sponsored by GlimpzIt.
                 </p>
             </article>
-
+            <article>
+                <h4>
+                    <a href="https://www.enrichla.org" target="_blank">EnrichLA</a> - Android Application Developer
+                </h4>
+                <!-- <p>Android Application Developer</p> -->
+                <p><img src="images/enrichLA_logo.png" alt="android_dev_enrichLA_logo"></p>
+                <p><img src="images/thyme_app_screen1.png" alt="android_dev_app_screen1"></p>
+                <p><img src="images/thyme_app_screen2.png" alt="android_dev_app_screen2"></p>
+                <p>
+                    <!-- Images showing Thyme's integration with Zoho to get contact list by location -->
+                </p>
+                <p>
+                    Location-based Android application built for EnrichLA's staff to retrieve work site and affiliated staff contact information.
+                    Uses mobile GPS and network location, and by employing the Haversine formula, lists the sites by distance closest to the user.
+                </p>
+                <p>
+                    Users can use the application, Thyme, to search for their contact by name, role or group.
+                    Thyme uses Zoho CRM's API to find the information users need.
+                </p>
+            </article>
+            <div class="back-top"><a href="#home">Back to top</a></div>
         </section>
-        <section>
+        <!-- <section>
             <h3>What I Have Done Personally</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ratione sapiente doloremque veniam cupiditate nobis deserunt suscipit quasi, numquam, aliquam repudiandae sequi vero architecto alias, eum vitae cumque laudantium quibusdam.</p>
             <p><img src="https://placehold.it/350x270" alt=""></p>
-        </section>
+        </section> -->
         <section>
             <h3>Where I Studied</h3>
             <p><strong>University of California, Berkeley</strong> - B.A. Applied Mathematics</p>
             <p><strong>National Taiwan University</strong> - M.Sc. Computer Science in Human-Computer Interaction (HCI)</p>
+            <div class="back-top"><a href="#home">Back to top</a></div>
         </section>
         <section id="other">
             <h3>Links:</h3>
-            <p class="link"><span class="icon-fa-file-pdf-o"></span><a href="files/Allan_Lin_resume.pdf" target="_blank">View my resume</a></p>
-            <p class="link"><span class="icon-fa-linkedin-square"></span>LinkedIn</p>
-            <p class="link"><span class="icon-fa-github"></span>GitHub</p>
-            <p class="link"><span class="icon-fa-flask"></span>Project 1</p>
-            <p class="link"><span class="icon-fa-flask"></span>Project 2</p>
-            <!-- <span class="icon-file-pdf-o"></span><a href="files/Allan_Lin_resume.pdf" target="_blank">View my resume</a>
-            <span class="icon-linkedin-square"></span>LinkedIn
-            <span class="icon-github-o"></span>GitHub -->
+            <p class="link">
+                <span class="icon-fa-file-pdf-o"></span>
+                <a href="files/Allan_Lin_resume.pdf" target="_blank">View my resume</a>
+            </p>
+            <p class="link">
+                <span class="icon-fa-linkedin-square"></span>
+                <a href="https://www.linkedin.com/in/allan-lin-8b744614/" target="_blank">LinkedIn</a>
+            </p>
+            <p class="link">
+                <span class="icon-fa-github"></span>
+                <a href="https://github.com/aclin" target="_blank">GitHub</a>
+            </p>
+            <!-- <p class="link"><span class="icon-fa-flask"></span>Project 1</p>
+            <p class="link"><span class="icon-fa-flask"></span>Project 2</p> -->
+            <div class="back-top"><a href="#home">Back to top</a></div>
         </section>
-        <section>
+        <!-- <section>
             <h4>Why is this page so simple?</h4>
             <p>
                 If you're looking at this page and wondering why it's so simplistic,
@@ -173,7 +200,7 @@
                     </li>
                 </ol>
             </p>
-        </section>
+        </section> -->
     </div>
 </div>
 

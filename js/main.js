@@ -1,4 +1,6 @@
-
+/*
+Author: Allan Lin
+*/
 (function() {
     var mobileNavBtn = document.getElementById("drop-down-btn");
     mobileNavBtn.addEventListener("click", function() {
