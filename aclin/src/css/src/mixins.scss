@@ -1,0 +1,8 @@
+/* Mixins */
+
+/* box-shadow mixin for cross-browser support */
+@mixin box-shadow($set, $h, $v, $blur, $spread, $color) {
+    -webkit-box-shadow: $set $h $v $blur $spread $color;
+    -moz-box-shadow:$set $h $v $blur $spread $color;
+    box-shadow: $set $h $v $blur $spread $color;
+}

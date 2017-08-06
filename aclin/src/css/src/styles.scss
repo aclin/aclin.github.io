@@ -1,0 +1,261 @@
+/*
+Author: Allan Lin
+*/
+
+@import "mixins.scss";
+@import "palette.scss";
+
+* {
+    /*border: 1px solid blue;*/
+    box-sizing: border-box;
+}
+
+input[type="button"],
+button {
+    border-radius: 6px;
+}
+
+body {
+    margin: 0px;
+    background-color: $themeBackground;
+    font-size: 18px;
+
+    * {
+        /*font-family: Helvetica, Arial, sans-serif;*/
+        font-family: 'Raleway', sans-serif;
+    }
+
+    a,
+    a:visited {
+        color: $themeDarkBlue;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $themeBrown;
+    }
+
+    ul {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding-left: 0px;
+        list-style: none;
+
+        li {
+            padding-top: 5px;
+        }
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-right: 5px solid $themeDarkBlue;
+    background-color: $navbarBG;
+    min-width: 250px;
+
+    section.desktop {
+        position: fixed;
+        width: 250px;
+        padding: 0px 30px;
+
+        h1 {
+            // text-align: center;
+        }
+
+        .profile-pic {
+            width: 100%;
+            // text-align: center;
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+                @include box-shadow(null, 2px, 2px, 4px, 0px, $themeDarkBlue);
+            }
+        }
+
+        .links {
+            // padding-left: 30px;
+        }
+    }
+
+    section.mobile {
+        background-color: $navbarBG;
+        display: none;
+    }
+}
+
+.content {
+    padding: 15px;
+
+    & > section {
+        border-bottom: 4px solid $themeBrown;
+        padding: 10px 5px;
+
+        img {
+            border: 1px solid black;
+            max-width: 100%;
+        }
+
+        .do-list {
+            // display: inline-block;
+            // vertical-align: top;
+            // width: 45%;
+        }
+
+        .back-top {
+            text-align: right;
+            font-size: 0.8em;
+            font-style: italic;
+        }
+    }
+
+    section#experience {
+        article {
+            border-bottom: 1px solid $themeRust;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+
+            img {
+                max-width: 300px;
+            }
+        }
+    }
+
+    section#other {
+        p.link {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 2em;
+
+            [class^="icon-"] {
+                margin-right: 5px;
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    #skills-list {
+        display: flex;
+        flex-flow: row wrap;
+
+        .skill-group {
+            // border: 1px solid $themeDarkBlue;
+            border-radius: 6px;
+            @include box-shadow(inset, 0px, 0px, 6px, 0px, rgba(92,123,139,1));
+            background-color: $themeOffWhite;
+            margin: 10px 10px;
+            padding: 10px;
+            width: 200px;
+
+            .group-title {
+                font-weight: bold;
+            }
+            ul {
+                margin-left: 20px;
+
+                /*li:before {
+                    content: "- ";
+                }*/
+            }
+        }
+    }
+
+    #objectives li {
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+    color: $themeBackground;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .navbar {
+        padding: 0px;
+        border-right: none;
+        border-bottom: 5px solid $themeDarkBlue;
+        @include box-shadow(null, 0px, 5px, 15px, 0px, rgba(0,0,0,0.3));
+        background-color: $themeBackground;
+        // position: fixed;
+        min-width: 100%;
+
+        section.desktop  {
+            display: none;
+        }
+
+        section.mobile {
+            display: block;
+
+            .top-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 20px;
+                // height: 80px;
+
+                button#drop-down-btn {
+                    border: none;
+                    background-color: transparent;
+                    padding: 10px;
+                    cursor: pointer;
+
+                    .icon-bar {
+                        background-color: $themeDarkBlue;
+                        display: block;
+                        width: 22px;
+                        height: 2px;
+                        border-radius: 1px;
+
+                        & + .icon-bar {
+                            margin-top: 4px;
+                        }
+                    }
+                }
+            }
+
+            #nav-menu {
+
+                .profile-pic-box {
+                    padding: 10px 20px;
+                    border-top: 1px solid $themeOffGray;
+
+                    img.profile-pic {
+                        border-radius: 20px;
+                        @include box-shadow(null, 2px, 2px, 4px, 0px, $themeDarkBlue);
+                    }
+                }
+
+                ul {
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+
+                    li.nav-link {
+                        display: block;
+                        padding: 0px 20px;
+                        line-height: 45px;
+                        border-top: 1px solid $themeOffGray;
+                    }
+                }
+            }
+        }
+    }
+
+    // .content {
+    //     padding-top: 85px;
+    // }
+}
