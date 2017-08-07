@@ -95,7 +95,7 @@ body {
         border-bottom: 4px solid $themeBrown;
         padding: 10px 5px;
 
-        img {
+        img.example {
             border: 1px solid black;
             max-width: 100%;
         }
@@ -121,7 +121,7 @@ body {
                 border-bottom: none;
             }
 
-            img {
+            img.example {
                 max-width: 300px;
             }
         }

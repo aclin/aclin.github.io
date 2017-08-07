@@ -4,6 +4,7 @@ import GlimpzItImg from "../images/glimpzit.png";
 import EnrichLALogo from "../images/enrichLA_logo.png";
 import Thyme1 from "../images/thyme_app_screen1.png";
 import Thyme2 from "../images/thyme_app_screen2.png";
+import Demo from "./Demo";
 
 export default class Content extends Component {
     render = () => {
@@ -73,13 +74,14 @@ export default class Content extends Component {
                         <h4>
                             <a href="https://www.glimpzit.com">GlimpzIt</a> - Software Engineer
                         </h4>
-                        <p><img src={GlimpzItImg} alt="glimpzit-website-thumbnail" /></p>
+                        <p><img className="example" src={GlimpzItImg} alt="glimpzit-website-thumbnail" /></p>
                         <p>
                             Software engineer and lead front-end developer for all web presence of GlimpzIt.
                             This includes the company website, the customer portal, and the panel engagement portal.
                             Our users gather a lot of text and visual feedback through GlimpzIt, and working closely with
                             our UI/UX designer, I make sure all the data is presented nicely on the portal.
                         </p>
+                        <Demo captionPosition="top" />
                         <p>
                             I designed and built GlimpzIt's filtering and tagging capabilities that lets users generate
                             custom segmentations of their data.
@@ -93,9 +95,9 @@ export default class Content extends Component {
                         <h4>
                             <a href="https://www.enrichla.org">EnrichLA</a> - Android Application Developer
                         </h4>
-                        <p><img src={EnrichLALogo} alt="android_dev_enrichLA_logo" /></p>
-                        <p><img src={Thyme1} alt="android_dev_app_screen1" /></p>
-                        <p><img src={Thyme2} alt="android_dev_app_screen2" /></p>
+                        <p><img className="example" src={EnrichLALogo} alt="android_dev_enrichLA_logo" /></p>
+                        <p><img className="example" src={Thyme1} alt="android_dev_app_screen1" /></p>
+                        <p><img className="example" src={Thyme2} alt="android_dev_app_screen2" /></p>
                         <p>
                             Location-based Android application built for EnrichLA's staff to retrieve work site and affiliated staff contact information.
                             Uses mobile GPS and network location, and by employing the Haversine formula, lists the sites by distance closest to the user.
